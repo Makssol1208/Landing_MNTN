@@ -1,0 +1,39 @@
+@import './reset.css';
+
+body {
+    font-family: 'Gilroy';
+
+    background-color: #0b1d26;
+    background-image: url('./../img/bg/BG.jpg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+
+    color: #FFF;
+}
+
+/* BASE */
+
+.container-wide {
+    width: 1790px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+/* Header */
+
+.header {
+    padding-top: 64px;
+}
+
+.logo {
+    font-family: 'Playfair Display' serif;
+    font-size: 24px;
+}
