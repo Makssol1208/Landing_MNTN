@@ -25,6 +25,7 @@ body {
 
 .space-between {
     justify-content: space-between;
+    align-items: center;
 }
 
 /* Header */
@@ -33,7 +34,45 @@ body {
     padding-top: 64px;
 }
 
+.nav {
+    margin-bottom: 198px;
+}
+
 .logo {
-    font-family: 'Playfair Display' serif;
+    font-family: 'Playfair Display', serif;
     font-size: 24px;
+    font-weight: 700;
+}
+
+.nav-menu ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li + li {
+    margin-left: 40px;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    transition: 0.2s ease-in;
+}
+
+.nav a:hover {
+    color: #FBD784;
+}
+
+.login {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}
+
+.login:hover {
+    color: #FBD784;
 }
