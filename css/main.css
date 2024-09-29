@@ -20,10 +20,22 @@ body {
 
 /* BASE */
 
+.none {
+    display: none;
+}
+
 .container-wide {
-    width: 100%;
+    width: 1790px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.container {
+    max-width: 1492px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .row {
@@ -159,3 +171,100 @@ body {
     background-image: url('./../img/icons/arrow_down.svg');
     color: var(--white);
 }
+
+/* MAIN */
+
+.article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.article-text {
+    position: relative;
+    max-width: 782px;
+    padding-top: 141px;
+    padding-left: 150px;
+}
+
+.article-text::before {
+    position: absolute;
+    display: block;
+    content: attr(data-number);
+    width: 240px;
+    height: 240px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 240px;
+    line-height: 1;
+    color: rgb(255, 255, 255, 0.1);
+
+}
+
+.article-text p {
+    margin-bottom: 27px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.78;
+    color: var(--white);
+}
+
+.article-subtitle {
+    margin-bottom: 32px;
+    position: relative;
+    padding-left: 96px;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.222;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: var(--accent);
+}
+
+.article-subtitle::before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    content: '';
+    width: 72px;
+    height: 2px;
+    background-color: var(--accent);
+}
+
+.article-title {
+    max-width: 555px;
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 1.2;
+    color: var(--white);
+}
+
+.article-read-more {
+    display: inline-block;
+    position: relative;
+    padding-right: 40px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.22;
+    color: var(--accent);
+}
+
+.article-read-more::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 16px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url('./../img/icons/arrow_right.svg');
+    color: var(--white);
+}
+
+.article-img {}
