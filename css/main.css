@@ -25,7 +25,7 @@ body {
 }
 
 .container-wide {
-    width: 1790px;
+    max-width: 1790px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -113,15 +113,30 @@ body {
     color: var(--accent);
 }
 
-.login {
+.account {
+    position: relative;
+    padding-left: 30px;
     font-size: 18px;
     font-weight: 700;
     color: var(--white);
     text-decoration: none;
 }
 
-.login:hover {
+.account:hover {
     color: var(--accent);
+}
+
+.account::before {
+    display: block;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    transform: translateY(-50%);
+    background-image: url('./../img/icons/account.svg');
+    background-size: contain;
 }
 
 /* HERO */
