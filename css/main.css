@@ -11,7 +11,7 @@ body {
     font-family: var(--font-family);
 
     background-color: #0b1d26;
-    background-image: url('./../img/bg/BG.jpg');
+    background-image: url('./../img/bg/BG.webp');
     background-size: 100% auto;
     background-repeat: no-repeat;
 
@@ -19,6 +19,10 @@ body {
 }
 
 /* BASE */
+
+.no-scroll {
+    overflow-y: hidden;
+}
 
 .none {
     display: none;
@@ -203,6 +207,7 @@ body {
 
 .mobile-nav {
     position: fixed;
+    z-index: 8;
     top: 0;
     right: 0;
 
@@ -431,6 +436,11 @@ body {
 
 .footer {
     padding-bottom: 120px;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer-copyright {

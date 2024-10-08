@@ -20,7 +20,7 @@
     font-style: normal;
 }
 
-@font-face {
+/* @font-face {
     font-family: 'Gilroy';
     src: url('Gilroy-ExtraBold.eot');
     src: local('Gilroy ExtraBold'), local('Gilroy-ExtraBold'),
@@ -29,4 +29,4 @@
         url('Gilroy-ExtraBold.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
-}
+} */
